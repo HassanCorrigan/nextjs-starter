@@ -1,0 +1,22 @@
+.header {
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainNav a {
+  padding: 1rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}

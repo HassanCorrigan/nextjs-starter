@@ -1,0 +1,101 @@
+:root {
+  --primary-color: rgba(0, 0, 0, 1);
+  --primary-bg-color: rgba(255, 255, 255, 1);
+  --secondary-color: rgba(0, 0, 0, 1);
+  --secondary-bg-color: rgba(255, 255, 255, 1);
+  --highlight-color: rgba(0, 0, 0, 1);
+  --border-radius: 1rem;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  min-height: 70vh; /* Temporary for placeholders */
+  display: flex;
+  place-content: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+:is(h1, h2, h3, h4) {
+  font-family: sans-serif;
+}
+
+h1.page-title {
+  padding: 1rem;
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+input,
+button,
+textarea {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  outline: var(--highlight-color);
+}
+
+.btn {
+  color: var(--secondary-bg-color);
+  background-color: var(--highlight-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem var(--box-shadow-color);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.05);
+}
+.btn:active {
+  filter: brightness(0.9);
+}
+.btn[disabled] {
+  filter: opacity(0.5);
+  cursor: default;
+}

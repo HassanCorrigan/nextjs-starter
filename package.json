@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-starter",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A starter template for Next.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "build:static": "next build && next export",
+    "dev": "next dev",
+    "lint": "next lint",
+    "clean": "rm -rf .next out",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "next",
+    "starter",
+    "template"
+  ],
+  "author": "Hassan Corrigan <github@hassancorrigan.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@types/react": "^18.0.9",
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "typescript": "^4.6.4"
+  }
+}
